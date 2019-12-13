@@ -21,7 +21,12 @@
             "ignoreFailures": false
         }],
         "logging": {
-            "engineLogging": true
+            "engineLogging": true,
+            "trace": true,
+            "exceptions": true,
+            "moduleLoad": true,
+            "programOutput": true,
+            "traceResponse": true
         }
     }]
 }

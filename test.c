@@ -3,14 +3,23 @@
 
 int main()
 {
-    int x = 5;
-    printf("x is %d\n", x);
+    fizzBuzz();
+}
 
-    x = 15;
-    printf("x is %d\n", x);
+void fizzBuzz()
+{
+    char position = 0;
 
-    int *aptr = &x;
+    while (position <= 100)
+    {
+        if (position % 3 == 0)
+            printf("Fizz");
+        if (position % 5 == 0)
+            printf("Buzz");
+        if (position % 3 != 0 && position % 5 != 0)
+            printf("%d", position);
+        printf("\n");
 
-    printf("location in memory is %x\n", aptr);
-    printf("x is %d\n", *aptr);
+        position++;
+    }
 }
